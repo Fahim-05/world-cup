@@ -1,19 +1,17 @@
-/*-----------
-      fonts
---------------*/
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body{
     font-family: 'Poppins', sans-serif;
 }
-
-
-/*-----------------------
-        top banner
-------------------------*/
+/* utilities */
 .container{
     display: flex;
 }
+
+/*----------------------------------------------------------
+                          top banner
+-----------------------------------------------------------*/
 .top-banner{
     width: 1321px;
     height: 646px;
@@ -34,43 +32,42 @@ body{
 .banner-title p{
     font-size: 16px;
 }
-@keyframes button {
+@keyframes watch-live {
     from{
-        color:orange;
+        color:rgb(185, 88, 4);
     }
     to{
-        color:tomato;
+        color:rgb(255, 113, 88);
     }
 }
 .banner-title a{
     text-decoration: none;
     color: white;
-    /* background-color: #50C878; */
-    background-image: linear-gradient(to right, #363795,#005C97);
+    background-image: linear-gradient(to right, #0c483cae,#11714b);
     padding: 16px 60px 16px 25px;
     border-radius: 10px;
-    animation: button 0.8s ease-in-out 0.1s infinite alternate;
+    animation: watch-live 1.5s ease-in-out 0.1s infinite alternate;
 }
 @keyframes play {
     from{
-        color:orange;
+        color:rgb(0, 148, 0);
         left: 5px;
-        transform: scale(0.8);
+        /* transform: scale(0.8); */
     }
     to{
-        color:seagreen;
-        left: 10px;
-        transform: scale(1.5);
+        color:rgb(10, 207, 95);
+        left: 15px;
+        /* transform: scale(1.5); */
     }
 }
 .fa-play{
     position: relative;
     padding-left: 10px; 
     animation: play 1.5s ease-in-out 0.1s infinite alternate;
-    /* animation-play-state: running;  */
 }
 .half-width img{
     padding: 33px 0 0 0;
     width: 581px;
     height: 613px;
+    margin-left: 30px;
 }
