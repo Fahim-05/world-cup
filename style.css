@@ -1,0 +1,76 @@
+/*-----------
+      fonts
+--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*-----------------------
+        top banner
+------------------------*/
+.container{
+    display: flex;
+}
+.top-banner{
+    width: 1321px;
+    height: 646px;
+    background-color: #097969;
+    border-radius: 20px;
+}
+.half-width{
+    width: 50%;
+}
+.banner-title{
+    padding: 20px 10px 0 106px;
+    color: white;
+}
+.banner-title h1{
+    font-size: 70px;
+}
+
+.banner-title p{
+    font-size: 16px;
+}
+@keyframes button {
+    from{
+        color:orange;
+    }
+    to{
+        color:tomato;
+    }
+}
+.banner-title a{
+    text-decoration: none;
+    color: white;
+    /* background-color: #50C878; */
+    background-image: linear-gradient(to right, #363795,#005C97);
+    padding: 16px 60px 16px 25px;
+    border-radius: 10px;
+    animation: button 0.8s ease-in-out 0.1s infinite alternate;
+}
+@keyframes play {
+    from{
+        color:orange;
+        left: 5px;
+        transform: scale(0.8);
+    }
+    to{
+        color:seagreen;
+        left: 10px;
+        transform: scale(1.5);
+    }
+}
+.fa-play{
+    position: relative;
+    padding-left: 10px; 
+    animation: play 1.5s ease-in-out 0.1s infinite alternate;
+    /* animation-play-state: running;  */
+}
+.half-width img{
+    padding: 33px 0 0 0;
+    width: 581px;
+    height: 613px;
+}
