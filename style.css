@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0%;
 }
 /* utilities */
 .container{
@@ -10,12 +11,17 @@ body{
     margin-bottom: 100px;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------
+                                                               Header
+------------------------------------------------------------------------------------------------------------------------*/
+
 /*----------------------------------------------------------
                           top banner
 -----------------------------------------------------------*/
 .top-banner{
     width: 1321px;
     height: 646px;
+    margin: 5px 5px 100px 5px;
     /* background-color: #097969; */
     background-color: #023020;
     border-radius: 20px;
@@ -76,6 +82,11 @@ body{
 }
 
 
+
+/*---------------------------------------------------------------------------------------------------------------------
+                                                                Blogs
+------------------------------------------------------------------------------------------------------------------------*/
+
 /*----------------------------------------------------------
                         Blogs Buttons
 -----------------------------------------------------------*/
@@ -109,6 +120,7 @@ body{
 -----------------------------------------------------------*/
 .blogs{
     display: flex;
+    margin: 0 5px 100px 5px;
 }
 .blog-article{
     display: grid;
@@ -148,4 +160,66 @@ body{
 .fa-comment-dots{
     margin-left: 30px;
     margin-right: 10px;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------
+                                                                Footer
+------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------
+                        Footer Menu
+-----------------------------------------------------------*/
+footer{
+    background-color: #023020;;
+    padding: 50px 100px;
+}
+footer h3{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.footer-menu{
+    border-top: 1px solid grey;
+    margin-top: 50px;
+}
+.footer-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.footer-menu li{
+    list-style: none;
+    font-size: 16px;  
+}
+.footer-menu a{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------
+                        Footer Social Links
+-----------------------------------------------------------*/
+.footer-social-link{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.footer-social-link a{
+    /* color:#0cd384; */
+    margin: 50px;
+}
+.fa-facebook{
+    color: #4d7cdb;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-youtube{
+    color: #FF0000;
+}
+.fa-github{
+    color: #dbdbdb;
 }
