@@ -12,7 +12,7 @@ body{
 }
 
 /*----------------------------------------------------------------------------------------------------------------------
-                                                               Header
+                                                  Header (Css for Blog page)
 ------------------------------------------------------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------
@@ -60,7 +60,7 @@ body{
 @keyframes play {
     from{
         color:rgb(0, 148, 0);
-        left: 5px;
+        left: 0px;
         /* transform: scale(0.8); */
     }
     to{
@@ -163,6 +163,18 @@ body{
 }
 
 
+/* view all button */
+#view-all-btn{
+    visibility: hidden;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    position: relative;
+    left: 300px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
 
 /*---------------------------------------------------------------------------------------------------------------------
                                                                 Footer
@@ -226,9 +238,19 @@ footer h3{
 
 
 
-/*--------------------------------------------------------- Media quary-------------------------------------- */
 
-/* for mobile device */
+
+/*--------------------------------------------------------- Media quary for blog page-------------------------------------- */
+/*--------------------------------------------------------- Media quary for blog page-------------------------------------- */
+/*--------------------------------------------------------- Media quary for blog page-------------------------------------- */
+/*--------------------------------------------------------- Media quary for blog page-------------------------------------- */
+
+
+
+
+/*-----------------------------------------------------
+                     for mobile device
+------------------------------------------------------*/
 @media only screen and (max-width:688px) {
     
     /* top banner */
@@ -247,8 +269,7 @@ footer h3{
     .banner-title{
         width: 100%;
         text-align: center;
-        margin-left: -60px;
-        
+        margin-left: -60px;  
     }
     .banner-title h1{
         font-size: 24px;
@@ -267,11 +288,10 @@ footer h3{
         width: 233px;
         height: 245px;
     }
-    
 
-    /* ------------------------blogs */
+    /* ------------------------blogs--------------------------- */
 
-    /* ----------------------------------------------blog button */
+    /* -------------blog button------------- */
     .blogs{
         flex-direction: column;
     }
@@ -296,8 +316,8 @@ footer h3{
         margin-top: -100px;
     }
 
-    /* ---------------------------------------------------footer */
 
+    /* ---------------------------footer------------------------- */
 
     footer{
         background-color: #023020;;
@@ -323,13 +343,98 @@ footer h3{
     }
 
 
-    /* ----------------------------------------footer social links */
+    /* ----------------footer social links-------------- */
+
     .footer-social-link a{
         margin: 10px 10px;
     }
-    
-    
+}
 
+
+/*-----------------------------------------------------
+                     for Tablet device
+------------------------------------------------------*/
+
+@media only screen and (min-width: 669px) and (max-width:992px) {
+
+
+    /* ----------------top banner----------------- */
+    .top-banner{
+        width: 734px;
+        height: 398px;
+        margin-left: 16px;
+    }
+    .banner-title{
+        margin-top: 20px;
+        margin-left: -40px;
+        margin-right: -60px;
+    }
+    .banner-title h1{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .banner-title p{
+        font-size: 12px;
+    }
+    .banner-title a{
+        padding: 10px 25px;
+    }
+    .top-banner img{
+        width: 323px;
+        height: 340px;
+        margin-top: 25px;
+    }
+
+
+    /* -----------------------------blogs --------------------*/
+    .blogs{
+        flex-direction: column;
+        
+    }
+    .buttons{
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        width: 90%%;
+        height: 150px;
+        margin-top: -70px;
+        margin-bottom: 50px;
+        margin-left: -5px;
+    }
+    .btn-border{
+        border: 1px solid grey;
+        margin: 0px 10px;
+    }
+
+    .blog-article{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
+
+    }
+
+
+
+
+    /* view all button */
+    #view-all-btn{
+        visibility: visible;
+    }
+    /* -----------------------------footer --------------------------*/
+    footer{
+        margin-top: 100px;
+        margin-left: -10px;
+    }
+    .footer-menu ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-menu li{
+        margin: 10px 20px;
+        text-align: center;
+        /* justify-content: space-between; */
+    }
+
+    
 }
 
 
@@ -347,17 +452,15 @@ footer h3{
 
 
 
-/*------------------------------------------------------------------------------------------ for upcoming match ---------------- */
+/*-----------------------------------------------------------------------------------------------------------------------------------
+                                                         CSS for Upcoming Match
+----------------------------------------------------------------------------------------------------------------------------------- */
 
 
 .upcoming-blogs{
     display: flex;
     margin: 0 5px 100px 5px;
 }
-
-
-
-
 
 .upcoming-blog-article{
     display: grid;
@@ -366,7 +469,6 @@ footer h3{
     grid-column-gap: 20px;
     width: 70%;
 }
-
 
 .upcoming-article{
     border: 1px solid lightgray;
@@ -401,10 +503,3 @@ footer h3{
     font-weight: 200;
     color: grey;
 }
-/* .article a{
-    text-decoration: none;
-    color: black;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 5px 10px;
-} */
