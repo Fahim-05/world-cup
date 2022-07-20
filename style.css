@@ -46,7 +46,7 @@ body{
         color:rgb(185, 88, 4);
     }
     to{
-        color:rgb(255, 113, 88);
+        color:rgb(254, 143, 124);
     }
 }
 .banner-title a{
@@ -220,7 +220,6 @@ footer h3{
     font-size: 30px;
 }
 .footer-social-link a{
-    /* color:#0cd384; */
     margin: 50px;
 }
 .fa-facebook{
@@ -231,9 +230,6 @@ footer h3{
 }
 .fa-youtube{
     color: #FF0000;
-}
-.fa-github{
-    color: #dbdbdb;
 }
 
 
@@ -274,10 +270,20 @@ footer h3{
     .banner-title h1{
         font-size: 24px;
     }
+    
     .banner-title p{
         font-size: 10px;
         margin-bottom: -15px;
+        margin-top: 20px;
+        width: 260px;
+        height: 35px;
+
+        /* text ellipsis */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
     }
+
     .banner-title a{
         padding: 10px 25px;
         font-size: 10px;
@@ -309,7 +315,7 @@ footer h3{
         border: 1px solid grey;
     }
 
-    /* grid */
+    /* --------------grid ----------------*/
     .blog-article{
         grid-template-columns: repeat(1, 1fr);
         margin-left: 45px;
@@ -375,6 +381,7 @@ footer h3{
     }
     .banner-title p{
         font-size: 12px;
+        margin-right: 20px;
     }
     .banner-title a{
         padding: 10px 25px;
@@ -413,9 +420,8 @@ footer h3{
     }
 
 
-
-
     /* view all button */
+
     #view-all-btn{
         visibility: visible;
     }
@@ -431,7 +437,6 @@ footer h3{
     .footer-menu li{
         margin: 10px 20px;
         text-align: center;
-        /* justify-content: space-between; */
     }
 
     
@@ -502,4 +507,47 @@ footer h3{
     font-size: 15px;
     font-weight: 200;
     color: grey;
+}
+
+
+
+/* ---------------------Upcoming Media query */
+
+/*-----------------------------------------------------
+                     for mobile device
+------------------------------------------------------*/
+
+@media only screen and (max-width:688px) {
+    
+    /* Upcoming top banner */
+    .upcoming-blogs{
+        flex-direction: column;
+    }
+
+    /* -------------Upcoming blog button------------- */
+    .btn-border{
+        border: 1px solid grey;
+    }
+
+    .upcoming-blog-article{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 45px;
+        margin-top: -100px;
+    }
+}
+
+/*-----------------------------------------------------
+                     for Tablet device
+------------------------------------------------------*/
+@media only screen and (min-width: 669px) and (max-width:992px){
+    .upcoming-blogs{
+        flex-direction: column;  
+    }
+    
+    .upcoming-blog-article{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
+    
+    }
+
 }
