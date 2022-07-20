@@ -223,3 +223,81 @@ footer h3{
 .fa-github{
     color: #dbdbdb;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------ for upcoming match ---------------- */
+
+
+.upcoming-blogs{
+    display: flex;
+    margin: 0 5px 100px 5px;
+}
+
+
+
+
+
+.upcoming-blog-article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 70%;
+}
+
+
+.upcoming-article{
+    border: 1px solid lightgray;
+    width: 312px;
+    height: 242px;
+    border-radius: 10px;
+}
+
+.upcoming-article-center{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 40px;
+}
+.flag{
+    display: flex;
+    width: 252px;
+    justify-content: center;   
+    align-items: center;
+}
+.flag span{
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.upcoming-article-detail{
+    font-weight: 600;
+    font-size: 18px;
+}
+.match-time{
+    font-size: 15px;
+    font-weight: 200;
+    color: grey;
+}
+/* .article a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+} */
