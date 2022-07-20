@@ -226,6 +226,48 @@ footer h3{
 
 
 
+/*--------------------------------------------------------- Media quary */
+
+/* for mobile device */
+@media only screen and (max-width:688px) {
+    .container{
+        flex-direction: column;
+    }
+    .top-banner{
+        width: 334px;
+        height: 472px;
+    }
+    .half-width{
+        width: 258px;
+        height: 178px;
+    }
+    .banner-title{
+        width: 100%;
+        text-align: center;
+        margin-left: -70px;
+        
+    }
+    .banner-title h1{
+        font-size: 22px;
+    }
+    .banner-title p{
+        font-size: 10px;
+        margin-bottom: -20px;
+    }
+    .banner-title a{
+        padding: 10px 25px;
+        font-size: 10px;
+    }
+    .half-width img{
+        margin-top: 16px;
+        margin-left: 60px;
+        width: 233px;
+        height: 245px;
+    }
+    
+}
+
+
 
 
 
